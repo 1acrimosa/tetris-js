@@ -14,4 +14,9 @@ class Tetris {
     moveRight() {}
 
     moveLeft() {}
+
+    moveBottom() {}
+
+    changeRotation() {}
+    
 }
