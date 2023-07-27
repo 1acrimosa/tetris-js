@@ -69,3 +69,41 @@ const shapes = [
     [0, 1, 1],
   ]),
 ];
+
+let gameMap;
+let gameOver
+let currentShape;
+let nextShape;
+let score;
+let initialTwoDArr;
+
+let gameLoop = () => {
+    setInterval(update, 1000 / gameSpeed)
+    setInterval(draw, 1000 / framePerSecond)
+}
+
+let update = () => {}
+
+let draw = () => {}
+
+let getRandomShape = () => {
+  return Object.create(shapes[Math.floor(Math.random() * shapes.length)]);
+};
+
+let resetVars = () => {
+    initialTwoDArr = []
+    for (let i = 0; i < squareCountY; i++) {
+    let temp = [];
+    for (let j = 0; j < squareCountX; j++) {
+      temp.push({ imageX: -1, imageY: -1 });
+    }
+    initialTwoDArr.push(temp);
+  }
+  score = 0;
+  gameOver = false;
+  currentShape = getRandomShape();
+  nextShape = getRandomShape();
+  gameMap = initialTwoDArr;
+};
+
+gameLoop()
