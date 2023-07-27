@@ -27,3 +27,6 @@ const framePerSecond = 24
 const gameSpeed = 5
 const canvas = document.getElementById("canvas")
 const image = document.getElementById("image")
+const ctx = canvas.getContext("2d")
+const squareCountX = canvas.width / size
+const squareCountY = canvas.height / size
