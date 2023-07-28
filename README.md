@@ -9,15 +9,48 @@ I develop own tetris, so everyone can change color, texture and speed of objects
 
 ## Code
 
+### All Statistics
+
 ```javascript
- canvasContext.strokeStyle = "red";
-         canvasContext.arc(
-             this.x + oneBlockSize / 2,
-             this.y + oneBlockSize / 2,
-             this.range * oneBlockSize,
-             0,
-             2 * Math.PI
-         );
+ const imageSquareSize = 24;
+const size = 40;
+const framePerSecond = 24;
+const gameSpeed = 3;
+const canvas = document.getElementById("canvas");
+const nextShapeCanvas = document.getElementById("nextShapeCanvas");
+const scoreCanvas = document.getElementById("scoreCanvas");
+const image = document.getElementById("image");
+const ctx = canvas.getContext("2d");
+const nctx = nextShapeCanvas.getContext("2d");
+const sctx = scoreCanvas.getContext("2d");
+const squareCountX = canvas.width / size;
+const squareCountY = canvas.height / size;
+```
+### Shape and color of figures
+
+```javascript
+const shapes = [
+  new Tetris(0, 120, [
+    [0, 1, 0],
+    [0, 1, 0],
+    [1, 1, 0],
+  ]),
+  new Tetris(0, 96, [
+    [0, 0, 0],
+    [1, 1, 1],
+    [0, 1, 0],
+  ]),
+  new Tetris(0, 72, [
+    [0, 1, 0],
+    [0, 1, 0],
+    [0, 1, 1],
+  ]),
+  new Tetris(0, 48, [
+    [0, 0, 0],
+    [0, 1, 1],
+    [1, 1, 0],
+  ]),
+];
 ```
 
 ---
@@ -30,15 +63,12 @@ Screenshots from game. <br />
 | --------------------------------------- | --------------------------------------- |
 |                                 |
 
-![Screenshot](1.png)
-![Screenshot](2.png)
-
 ---
 
 ## Bugs
 
-- bla bla bla
-- nya 
+- When next figure are same with current one, next are also changing position
+- Some texture bugs
 
 ---
 
