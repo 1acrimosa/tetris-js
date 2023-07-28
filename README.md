@@ -7,6 +7,16 @@ I develop own tetris, so everyone can change color, texture and speed of objects
 
 ---
 
+## Features
+
+- "Repeat" button.
+- "Game over" text.
+- Scores
+- Figures properly changing positions
+- Design of BG and figures
+
+---
+
 ## Code
 
 ### All Statistics
