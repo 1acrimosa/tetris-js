@@ -7,10 +7,7 @@ I develop own tetris, so everyone can change color, texture and speed of objects
 
 ---
 
-## Features
-
-With this code, all ghosts have a red circle from which you can see their angle of view. <br />
-(file: ghost.js , method: draw())
+## Code
 
 ```javascript
  canvasContext.strokeStyle = "red";
@@ -25,16 +22,23 @@ With this code, all ghosts have a red circle from which you can see their angle 
 
 ---
 
-![Screenshot](3.png)
-
----
-
 ## Screenshots
 
 Screenshots from game. <br />
 
+| ![](2.png)        | ![](1.png) |
+| --------------------------------------- | --------------------------------------- |
+| ![](1.png) |                                         |
+
 ![Screenshot](1.png)
 ![Screenshot](2.png)
+
+---
+
+## Bugs
+
+- bla bla bla
+- nya 
 
 ---
 
