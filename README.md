@@ -12,7 +12,7 @@ I develop own tetris, so everyone can change color, texture and speed of objects
 ### All Statistics
 
 ```javascript
- const imageSquareSize = 24;
+const imageSquareSize = 24;
 const size = 40;
 const framePerSecond = 24;
 const gameSpeed = 3;
@@ -67,8 +67,8 @@ Screenshots from game. <br />
 
 ## Bugs
 
-- When next figure are same with current one, next are also changing position
-- Some texture bugs
+- When the next figure is the same as the current one, the next one also changes its position.
+- Some bugs with textures
 
 ---
 
